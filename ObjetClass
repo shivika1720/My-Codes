@@ -1,0 +1,40 @@
+public static void checkObjectType (Object input)
+{
+	if (input instanceof Integer)
+	{
+		System.out.println(input +" is of Integer type.");
+     }
+   
+     else if (input instanceof String)
+     {
+    	 System.out.println(input +" is of String type.");
+     }
+     
+     else if (input instanceof Long)
+     {
+    	 System.out.println(input +" is of Long type.");
+     }
+     
+     else if (input instanceof float)
+     {
+    	 System.out.println(input +" is of float type.");
+     }
+ 
+     else
+     {
+    	System.out.println(input +" is of "+input.getClass().getTypeName()+" type.");
+     }
+ }
+public class ObjectClass {
+
+	public static void main(String[] args)
+	{
+		checkObjectType(17);
+		checkObjectType("Java");
+		checkObjectType(14S);
+		checkObjectType(1.7f);
+		checkObjectType(2.2d);
+		
+	}
+
+}
