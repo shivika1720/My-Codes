@@ -8,18 +8,18 @@ public class Arithmetic {
 	 System.out.println("The addition of " +i+ " and " +n+" is "+m);
 	}
 
-    void calculation(float p, int q)
+    void calculation(float p, int q)    // method overloading- same method name with different parameters
     {
     	float x= p;
     	int y= q;
     	float z= p*q;
-    	System.out.println("The multiplication of " +x+ " and " +y+" is "+z);
+    	 System.out.println("The multiplication of " +x+ " and " +y+" is "+z);
     }
 
   public static void main(String[] args)
   {
 	Arithmetic hey=new Arithmetic();
-	hey.calculation(14,17);
+	hey.calculation(14,17);   
 	hey.calculation(3.5f,10);
   }
 }
