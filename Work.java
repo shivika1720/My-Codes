@@ -3,7 +3,7 @@ public class Work
 {
 	int i;
 	
-	public Work(int variable)
+	 public Work(int variable)
   {
 	 i=variable;
   }
